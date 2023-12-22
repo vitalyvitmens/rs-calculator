@@ -1,5 +1,14 @@
 # РЕШЕНИЕ ЗАДАЧИ ПО GIT
 
+Скачали исходный проект
+Разархивировали
+Открыли его в VS-code => TERMINAL => Git Bash => npm i
+Если после выполнения команды в файле package-lock.json произошли изменения, то добавляем их и коммитим:
+git add package-lock.json
+git commit -m "chore(package-lock.json): описываем что произошло"
+Если после выполнения команды npm i не произошло изменений в файле package-lock.json, выполнении ребэйза в Задаче #1 вторая команда будет отличаться: git rebase -i HEAD~2
+npm run dev
+
 ## Задача #1
 ### Чтобы извлечь изменение с установкой:
 
@@ -88,3 +97,7 @@ git branch -D development
 Githud => New | + => Repository name (rs-calculator) => Create repository => SSH => git remote add origin git@github.com:vitalyvitmens/rs-calculator.git
 
 VS-code => git remote add origin git@github.com:vitalyvitmens/rs-calculator.git => git push (в случае ошибки: git push --set-upstream origin main)
+
+Gitlub => + => New project/repository => Create blank project => Project URL (rs-calculator) => Public => Убрать галочку README => Create project => git remote add origin git@github.com:vitalyvitmens/rs-calculator.git
+
+VS-code => git remote add origin-gl git@gitlub.com:vitalyvitmens/rs-calculator.git => git push

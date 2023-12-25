@@ -10,6 +10,7 @@
 - npm run dev
 
 ## Задача #1
+
 ### Чтобы извлечь изменение с установкой:
 
 - git checkout 69a8ad8ff38cd21cc7ee8eafe640deafe4516081
@@ -49,8 +50,8 @@
 - git checkout development
 - git merge feature/add-ant-design
 
-
 ## Задача #2
+
 ### Чтобы влить оставшиеся ветки (feature/core, feature/calculator, feature/calculator-actions) в development:
 
 - git checkout feature/core
@@ -68,16 +69,16 @@
 - git checkout development
 - git merge feature/calculator-actions
 
-
 ## Задача #3
+
 ### Чтобы применить патчи в приложение:
 
 - Создаем папку patches и складываем в неё наши патчи
-- git am ./patches/*
+- git am ./patches/\*
 - Удаляем папку patches
 
-
 ## Задача #4
+
 ### Чтобы создать репозиторий на GitHub или GitLab и загрузить в него локальный репозиторий:
 
 - Находясь на ветке development:
@@ -87,7 +88,7 @@
 - git checkout main
 - git merge development
 
-- Проверяем работоспособность приложения в браузере, если всё гуд, то  можем удалить ненужные ветки с помощью команд:
+- Проверяем работоспособность приложения в браузере, если всё гуд, то можем удалить ненужные ветки с помощью команд:
 - git branch -D feature/add-ant-design
 - git branch -D feature/core
 - git branch -D feature/calculator
@@ -101,3 +102,7 @@
 - Gitlub => + => New project/repository => Create blank project => Project URL (rs-calculator) => Public => Убрать галочку README => Create project => git remote add origin git@github.com:vitalyvitmens/rs-calculator.git
 
 - VS-code => git remote add origin-gl git@gitlub.com:vitalyvitmens/rs-calculator.git => git push
+
+- git tag 1.0.0
+- git push --tags
+- Github => Code => Releases => Create a new release => Choose a tag (1.0.0) => Release title (1.0.0) => Describe this release (Инициализировали проект и подготовили к продакшну) => Generaterelease notes => Publish release

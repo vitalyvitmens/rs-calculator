@@ -9,7 +9,7 @@
     "build": "tsc && vite build",
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
     "@ant-design/icons": "5.0.1",
@@ -27,11 +27,10 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "typescript": "5.0.4",
-    "vite": "4.3.5",
-    "@types/gh-pages": "^6.1.0"
-
+    "vite": "4.3.5"
   },
   "dependencies": {
+    "@types/gh-pages": "^6.1.0",
     "antd": "^5.4.7"
   }
 }

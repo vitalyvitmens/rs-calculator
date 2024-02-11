@@ -9,9 +9,5 @@ export default defineConfig({
       src: path.resolve(__dirname, './src'),
     },
   },
-  base:
-    process.env.NODE_ENV === 'production'
-      ? '/https://github.com/vitalyvitmens/rs-calculator/'
-      : '/',
   plugins: [react()],
 })
